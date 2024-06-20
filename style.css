@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* common classes */
+li {
+  list-style: none;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+span {
+  color: #8a47f6; /*  default color */
+}
+
+/* hero section start */
+
+.hero {
+  width: 90%;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+
+  .hero-img {
+    .img1 {
+      width: 100%;
+    }
+  }
+}
+
+/* about start */
+
+.about {
+  display: flex;
+  justify-content: space-around;
+
+  .about-img {
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.portfolio {
+  width: 90%;
+
+  .portfolio-menu {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(232, 228, 228);
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  .portfolio-img {
+    display: grid;
+    justify-content: space-around;
+    gap: 5px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 241px 113px 201px 200px;
+
+    .img1 {
+      grid-column: 1/2;
+      grid-row: 0/2;
+    }
+    .img2 {
+      width: cover;
+      grid-column: 2/4;
+      grid-row: 1/2;
+    }
+    .img3 {
+      grid-column: 4/4;
+      grid-row: 1/2;
+    }
+    .img4 {
+      
+    }
+    .img5 {
+      grid-column: 4/5;
+    }
+    .img6 {
+    }
+    .img7 {
+        grid-column:3/4;
+        grid-row:2/3;
+    }
+    .img8 {
+    }
+    .img9 {
+    }
+    .img10 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+  }
+}
+
+/* price start */
+
+.price {
+  width: 90%;
+  margin: 0 auto;
+
+  .price-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.insta-feed{
+
+    width:90%;
+    margin:auto;
+
+    .insta-img {
+        display: grid;
+        grid-template-rows: 200px 377px;
+        grid-template-columns: 608px 292px 292px;
+      
+        .img1 {
+          grid-column: 0/2;
+          grid-row: 1/2;
+        }
+        .img2 {
+          grid-column: 3/4;
+          grid-row: 1/3;
+        }
+        .img3 {
+          grid-column: 3/4;
+          grid-row: 2/3;
+        }
+        .img4 {
+          grid-column: 0/2;
+          grid-row: 2/3;
+        }
+        .img5 {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+        .img6 {
+          grid-column: 2/3;
+          grid-row: 1/2;
+        }
+      }
+}
+
+/* responsive design satrt form */
+
+@media screen and (max-width: 480px) {
+  .hero {
+    flex-direction: column-reverse;
+
+    .hero-text {
+      h1 {
+        color: #111111;
+      }
+
+      p {
+        color: #333333;
+      }
+    }
+  }
+
+  .about {
+    .about-text {
+      padding: 20px;
+
+      h1 {
+        color: #111111;
+      }
+
+      p {
+        color: #333333;
+      }
+    }
+  }
+
+  .portfolio{
+
+    .portfolio-img{
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+    }
+  }
+
+  .testionial {
+    padding:20px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .testimonial-img{
+
+        img{
+            width:90%;
+        }
+    }
+
+    .testimonial-text {
+      .identity {
+        width: 200px;
+      }
+    }
+  }
+
+  .insta-feed {
+    padding:20px;
+
+    .insta-img {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .Q-N-A {
+    padding: 20px;
+
+    .g-i-t {
+      padding: 20px;
+    }
+  }
+}
